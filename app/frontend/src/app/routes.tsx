@@ -6,6 +6,7 @@ import { NotFound } from '@app/components/NotFound/NotFound';
 import { useDocumentTitle } from '@app/utils/useDocumentTitle';
 import { ClaimsList } from './components/ClaimsList/ClaimsList';
 import { ClaimDetail } from './components/ClaimDetail/ClaimDetail';
+import { SummaryApp } from './components/SummaryApp/SummaryApp';
 
 
 let routeFocusTimer: number;
@@ -53,6 +54,13 @@ const routes: AppRouteConfig[] = [
     exact: true,
     path: '/ClaimDetail/:claim_id',
     title: 'Claim Detail',
+  },
+  {
+    component: SummaryApp,
+    exact: true,
+    label: 'Summary',
+    path: '/summary',
+    title: 'summary',
   },
 ];
 
